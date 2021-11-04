@@ -15,7 +15,7 @@
     - [4.3 页表(Page Table)](#43-页表page-table)
     - [4.4 页表缓存(Translation Lookaside Buffer , TLB)](#44-页表缓存translation-lookaside-buffer--tlb)
     - [4.5 Kernel Page Table](#45-kernel-page-table)
-# Lecture 4:Page tables
+# Lecture 4: Page tables
 
 ## Book Reading : Chapter 3
 页表提供了对每一个进程私有的地址空间和内存
