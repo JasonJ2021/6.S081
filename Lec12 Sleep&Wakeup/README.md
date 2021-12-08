@@ -8,6 +8,7 @@
 
 Preparation: Read remainder of "Scheduling", and corresponding parts of kernel/proc.c, kernel/sleeplock.c
 
+[Lab](https://github.com/JasonJ2021/6.S081/blob/main/Lec12%20Sleep%26Wakeup/lab.md)
 ## Book Reading 
 
 ### 7.5 : Sleep & Wake up

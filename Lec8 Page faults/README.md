@@ -9,7 +9,7 @@
 # Lecture 8 :Page faults
 
 ## Class
-
+[Lab](https://github.com/JasonJ2021/6.S081/blob/main/Lec8%20Page%20faults/lab.md)
 ### 8.1 Page fault Basics
 利用page fault可以实现一系列虚拟内存功能：
 - lazy allocation

@@ -25,7 +25,7 @@
     - [3.8 QEMU](#38-qemu)
     - [3.9 XV6启动过程](#39-xv6启动过程)
 # Lecture 3 : Operatin system organization and system call
-
+[Lab](https://github.com/JasonJ2021/6.S081/blob/main/Lec3%20Syscall/lab.md)
 ## Book reading
 操作系统一个重要的目标就是支持多个1程序同时运行。例如，第一章提到的system call : fork() , 可以开启一个新的进程。同时操作系统必须*time share*硬件资源，也就是说，即使进程比CPU多，操作系统也要保证每个进程都有机会去运行。操作系统还要保证一个进程出错不会影响到其他进程。但是呢，完全isolation也是不行的，因为不同进程之间可能会进行交互,pipeline管道就是一个例子。这就是操作系统的三个目标：
 - multiplexing

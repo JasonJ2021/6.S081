@@ -9,6 +9,9 @@
     - [11.3 XV6线程切换（一）](#113-xv6线程切换一)
 # Lecture 11 : Thread Switching
 Preparation: Read "Scheduling" through Section 7.4, and kernel/proc.c, kernel/swtch.S
+
+[Lab](https://github.com/JasonJ2021/6.S081/blob/main/Lec11%20Thread%20Switching/lab.md)
+
 ## Book Reading : Chapter 7 Scheduling
 
 ### 7.1 Multiplexing

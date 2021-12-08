@@ -15,6 +15,7 @@
     - [1.9 exec , wait系统调用](#19-exec--wait系统调用)
     - [1.10 I/O 重定向](#110-io-重定向)
 # Introduction and Examples
+[Lab](https://github.com/JasonJ2021/6.S081/blob/main/Lec1%20Introduction/lab.md)
 ## Book Reading(Chapter 1 OS interfaces)
 ### 1.1 Processes and memory
 | System call                         | Description                                                         |
@@ -44,21 +45,21 @@
 它可能来自于文件、文件夹、设备、管道、复制一个已有的fd,但是文件描述符把这些抽象为字节流，称为I/O
 0(标准输入)，1(标准输出)，2(标准错误)
 
-char buf[512];於其後在史丹佛大
-while(1){
-    n = read(0 ,buf,sizeof(buf));
-    if(n < 0 ){
-        fprintf(stderr,"read error\n" );
-        exit(1);
+    char buf[512];於其後在史丹佛大
+    while(1){
+        n = read(0 ,buf,sizeof(buf));
+        if(n < 0 ){
+            fprintf(stderr,"read error\n" );
+            exit(1);
+        }
+        if(n == 0 ){
+            break;
+        }
+        if(write(1,buf,n) != n){
+            fprintf(2,"write error\n");
+            exit(1);
+        }
     }
-    if(n == 0 ){
-        break;
-    }
-    if(write(1,buf,n) != n){
-        fprintf(2,"write error\n");
-        exit(1);
-    }
-}
 - 当fork()产生一个子进程后，文件描述符也会随之复制一份相同的。他们共享相同的设备，但是在子进程中关闭一个fd，不会影响父进程中相同的fd
 - open()总会选择最小的空闲文件描述符，如果关闭了0，那么open返回的就是0
 

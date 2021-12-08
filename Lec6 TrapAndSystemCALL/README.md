@@ -14,7 +14,7 @@
     - [6.3 ECALL指令之前的状态](#63-ecall指令之前的状态)
     - [6.4 ECALL指令之后的状态](#64-ecall指令之后的状态)
 # Lecture 5: system call
-
+[Lab](https://github.com/JasonJ2021/6.S081/blob/main/Lec6%20TrapAndSystemCALL/lab.md)
 ## Book Reading : Chapter 4 Traps and system calls
 有三种事件会导致CPU放下原来的指令流，强迫把控制转移到特定的代码。
 - System call: 一个用户程序执行ecall来调用system call
